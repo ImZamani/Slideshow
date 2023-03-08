@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>ImZamani</title>
+</head>
+<body>
+    <span class="title">JavaScript Exercise</span>
+    <div class="img-container">
+        <div class="slide fade">
+            <div class="number">1/4</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Heliopsis_July_2011-2.jpg/867px-Heliopsis_July_2011-2.jpg" alt="" width="100%" height="500px">
+            <div class="text">Caption one</div>
+        </div>
+        <div class="slide fade">
+            <div class="number">2/4</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Yoshino_Sakura_Tidal_Basin_DC.jpg/751px-Yoshino_Sakura_Tidal_Basin_DC.jpg" alt="" width="100%" height="500px">
+            <div class="text">Caption two</div>
+        </div>
+        <div class="slide fade">
+            <div class="number">3/4</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Alstroemeria_aurantiaca.jpg/747px-Alstroemeria_aurantiaca.jpg" alt="" width="100%" height="500px">
+            <div class="text">Caption three</div>
+        </div>
+        <div class="slide fade">
+            <div class="number">4/4</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Lotus_flower_%28978659%29.jpg/845px-Lotus_flower_%28978659%29.jpg" alt="" width="100%" height="500px">
+            <div class="text">Caption four</div>
+        </div>
+
+        <span class="prev" onclick="controlSlides(-1)">&#10094;</span>
+        <span class="next" onclick="controlSlides(1)">&#10095;</span>
+
+    </div>
+
+    <div class="dot-container">
+        <span class="dot" onclick="dotSlide(1)"></span>
+        <span class="dot" onclick="dotSlide(2)"></span>
+        <span class="dot" onclick="dotSlide(3)"></span>
+        <span class="dot" onclick="dotSlide(4)"></span>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

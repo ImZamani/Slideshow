@@ -1,0 +1,95 @@
+body{
+    background-color: rgba(6, 50, 17, 0.701);
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    display: block;
+    margin: 25px;
+}
+
+.img-container{
+    position: relative;
+}
+
+.slide{
+    display: none;
+}
+
+.prev , .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    padding: 15px 15px 25px 15px;
+    color: snow;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    transition: 0.6s ease;
+    text-align: center;
+}
+
+.next{
+    right: 0;
+}
+
+.next:hover , .prev:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text{
+    color: rgba(255, 245, 238, 0.579);
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.number{
+    color: seashell;
+    font-size: 14px;
+    font-weight: lighter;
+    position: absolute;
+    padding: 8px 12px;
+}
+
+.dot-container{
+    width: 100%;
+    text-align: center;
+}
+
+.dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d7d7d7;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+}
+
+.dot:hover , .active{
+    cursor: pointer;
+    background-color: slategray;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.2s;
+    animation-name: fade;
+    animation-duration: 1.2s;
+}
+
+@-webkit-keyframes fade{
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+@keyframes fade{
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
